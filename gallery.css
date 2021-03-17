@@ -258,6 +258,44 @@ a:visited {
 	margin-left: 35%;
 }
 
+#galleryContainerLeft{
+	
+	margin: 0;
+	padding-top: 6%;
+	display: flex;
+	margin-left: 10%;
+}
 
+#galleryContainerRight{
+	
+	margin: 0;
+	padding-top: 6%;
+	display: flex;
+	margin-left: 30%;
+}
 
+#galleryPicLeft{
+	text-align: center;
+	width: 12%;
+	height: 200px;
+	border: 0px solid green;
+	padding: 2.5%;
+	margin: 1%;
+	margin-left: 10%;
 
+}
+
+#galleryPicRight{
+	text-align: center;
+	width: 16%;
+	height: 235px;
+	border: 0px solid green;
+	padding: 2.5%;
+	margin: 1%;
+	margin-left: 10%;
+}
+
+img {
+	max-width: 100%;
+    max-height: 100%;
+}
