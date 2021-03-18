@@ -120,8 +120,8 @@ a:visited {
 
 #logoFooter{
 	position: static;
-	margin-right: auto;
-	margin-left: auto;
+	margin-right: 30%;
+	margin-left: 65%;
 	padding-top: 10%;
 }
 
@@ -148,6 +148,7 @@ a:visited {
 	margin-left: 40%;
 	border: solid black 3px;
 }
+
 #leftTitle{
 	position: static;
 	width: 20%;
@@ -157,6 +158,18 @@ a:visited {
 	margin-left: 15%;
 	border: solid black 3px;
 }
+
+#rightTitle{
+	position: static;
+	width: 20%;
+	text-align: center;
+	color: black;
+	background: #4E6668;
+	margin-left: 70%;
+	margin-right: 15%;
+	border: solid black 3px;
+}
+	
 
 
 #background{
@@ -214,11 +227,40 @@ a:visited {
 	margin-right: 10%;
 	padding: 3%;
 	padding-top: 13%;
-	padding-bottom: 13%;
+	padding-bottom: 25%;
 	background: white;
 	border: solid black 2px;
 }
 
+
+#rightDescription{
+	position: static;
+	margin-top: -20%;
+	margin-left: 50%;
+	margin-right: 10%;
+	padding: 10%;
+	padding-top: 3%;
+	padding-bottom: 13%;
+	padding-left: 25%;
+	background: white;
+	border: solid black 2px;
+
+} 
+
+
+#rightBackground{
+	position: static;
+	width: 10%;
+	margin-top: 2%;
+	margin-left: 49%;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	padding-left: 26%;
+	padding-right: 5%;
+	background: #8B5644;
+	border: solid black 5px;
+}
+	
 
 #widebackground{
 	position: static;
