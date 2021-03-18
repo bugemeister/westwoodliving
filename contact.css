@@ -233,6 +233,19 @@ a:visited {
 }
 
 
+#rightDescription{
+	position: static;
+	margin-top: -20%;
+	margin-left: 50%;
+	margin-right: 10%;
+	padding: 10%;
+	padding-top: 3%;
+	padding-bottom: 13%;
+	padding-left: 25%;
+	background: white;
+	border: solid black 2px;
+
+} 
 
 
 #rightBackground{
