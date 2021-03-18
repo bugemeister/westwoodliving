@@ -20,7 +20,7 @@ html, body {
 li {
 	float: left;
 	width: 24.7%;
-	border: solid black 2px;
+	border: solid black 0px;
 }
 
 li a {
@@ -254,7 +254,7 @@ a:visited {
 
 #footerInside{
 	font-size: 100%;
-	color: white;
+	color: black;
 	margin-left: 35%;
 }
 
@@ -263,7 +263,7 @@ a:visited {
 	margin: 0;
 	padding-top: 6%;
 	display: flex;
-	margin-left: 10%;
+	margin-left: 2%;
 }
 
 #galleryContainerRight{
@@ -271,28 +271,28 @@ a:visited {
 	margin: 0;
 	padding-top: 6%;
 	display: flex;
-	margin-left: 30%;
+	margin-left: 2%;
 }
 
 #galleryPicLeft{
+	background-color: #8B5644;
 	text-align: center;
-	width: 12%;
-	height: 200px;
-	border: 0px solid green;
-	padding: 2.5%;
+	width: 22%;
+	border: 1px solid black;
+	padding: 2%;
 	margin: 1%;
-	margin-left: 10%;
+	margin-left: 15%;
 
 }
 
 #galleryPicRight{
 	text-align: center;
-	width: 16%;
-	height: 235px;
-	border: 0px solid green;
-	padding: 2.5%;
+	background-color: #8B5644;
+	width: 22%;
+	border: 1px solid black;
+	padding: 2%;
 	margin: 1%;
-	margin-left: 10%;
+	margin-left: 15%;
 }
 
 img {
