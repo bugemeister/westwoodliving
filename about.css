@@ -129,7 +129,9 @@ a:visited {
 #logoBox{
 	position: static;
 	 width: 15%;
-	 height: 80%;
+	 height: 20%;
+	 margin-left: 33.5%;
+	 margin-top: -10%;
 	 object-fit: fill;
 }
 
