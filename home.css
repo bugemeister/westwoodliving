@@ -158,12 +158,12 @@ a:visited {
 }
 #foreground{
 	position: static;
-	margin-top: -20%;
+	margin-top: -19%;
 	margin-left: 52%;
-	margin-right: 8%;
+	margin-right: 7%;
 	padding: 3%;
-	padding-top: 5%;
-	padding-bottom: 5%;
+	padding-top: 9%;
+	padding-bottom: 9%;
 	background: white;
 	border: solid black 2px;
 }
@@ -183,18 +183,18 @@ a:visited {
 }
 #leftForeground{
 	position: static;
-	margin-top: -20%;
+	margin-top: -19%;
 	margin-left: 15%;
-	margin-right: 45%;
+	margin-right: 44%;
 	padding: 3%;
-	padding-top: 5%;
-	padding-bottom: 5%;
+	padding-top: 9%;
+	padding-bottom: 9%;
 	background: white;
 	border: solid black 2px;
 }
 #rightForeground{
 	position: static;
-	margin-top: -20%;
+	margin-top: -24%;
 	margin-left: 65%;
 	margin-right: 10%;
 	padding: 3%;
