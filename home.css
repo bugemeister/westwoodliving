@@ -124,7 +124,17 @@ a:visited {
 }
 
 
-#title{
+#titleTest{
+	position: static;
+	width: 20%;
+	text-align: center;
+	color: black;
+	background: #4E6668;
+	margin-left: 52%;
+	border: solid black 3px;
+}
+
+#titlePast{
 	position: static;
 	width: 20%;
 	text-align: center;
@@ -133,6 +143,7 @@ a:visited {
 	margin-left: 40%;
 	border: solid black 3px;
 }
+
 #leftTitle{
 	position: static;
 	width: 20%;
