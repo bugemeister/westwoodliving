@@ -93,7 +93,6 @@ a:visited {
 	margin-bottom: 0;
 	padding: 0;
 	padding-top: 10%;
-	padding-bottom: 10%;
 }
 #consultation{
 	position: static;
@@ -217,8 +216,8 @@ a:visited {
 	margin-left: 23%;
 	margin-right: 49%;
 	padding: 3%;
-	padding-top: 6%;
-	padding-bottom: 8%;
+	padding-top: 1%;
+	padding-bottom: 1%;
 	background: white;
 	border: solid black 2px;
 }
@@ -240,9 +239,10 @@ a:visited {
 	margin-top: -18.5%;
 	margin-left: 52%;
 	margin-right: 6.5%;
+	margin-bottom: 5%;
 	padding: 3%;
-	padding-top: 6%;
-	padding-bottom: 9%;
+	padding-top: 1%;
+	padding-bottom: 1%;
 	background: white;
 	border: solid black 2px;
 
