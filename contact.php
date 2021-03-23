@@ -29,15 +29,14 @@
 	
 	<div class="form-style-2">
 	<div class="form-style-2-heading">Provide your information</div>
-	<form action="" method="post">
+	<form action="contactForm.php" method="post">
 <label for="field1"><span>First Name <span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" /></label>
-<label for="field1"><span>Last Name <span class="required">*</span></span><input type="text" class="input-field" name="field2" value="" /></label>
-<label for="field2"><span>Email Address <span class="required">*</span></span><input type="text" class="input-field" name="field3" value="" /></label>
-<label for="field3"><span>Address <span class="required">*</span></span><input type="text" class="input-field" name="field4" value="" /></label>
+<label for="field2"><span>Last Name <span class="required">*</span></span><input type="text" class="input-field" name="field2" value="" /></label>
+<label for="field3"><span>Email Address <span class="required">*</span></span><input type="text" class="input-field" name="field3" value="" /></label>
 
 
 
-</form>
+
 </div>
 		
 	
@@ -50,11 +49,11 @@
 	<div id=rightDescription>
 	<div class="form-style-2">
 	<div class="form-style-2-heading">Tell us about your Project!</div>
-	<label for="field5"><span>Message <span class="required">*</span></span><textarea name="field5" class="textarea-field"></textarea></label>
+	<label for="field4"><span>Message <span class="required">*</span></span><textarea name="field4" class="textarea-field"></textarea></label>
 
 
 	<label><span> </span><input type="submit" value="Submit" /></label>
-		
+		</form>
 	</div>
 </div>
 

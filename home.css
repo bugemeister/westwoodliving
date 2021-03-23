@@ -232,7 +232,7 @@ a:visited {
 #wideforeground{
 	position: static;
 	margin: auto;
-	padding: 10%;
+	padding: 3%;
 	background: white;
 	border: solid black 2px;
 }
