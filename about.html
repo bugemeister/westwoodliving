@@ -9,9 +9,9 @@
 
 
 <ul id="navbar">
-  <li><a href="home.html">Home</a></li>
+  <li><a href="index.html">Home</a></li>
   <li><a href="Gallery.html">Gallery</a></li>
-  <li><a href="contact.html">Contact</a></li>
+  <li><a href="contact.php">Contact</a></li>
   <li><a href="about.html">About</a></li>
 </ul>
 
