@@ -19,10 +19,7 @@
 
 <div id=projectProposal style="float:left;">
 	<h2 style="margin-left:5%;">Project Proposals:</h2>
-			<div>
-		<p style="font-size: 15px; font-weight: bold; float: left; padding-left: 40px;">ID: 32</p><p style="float: right; padding-right:220px;">Jim's Living Room Design</p>
-		</div>
-		
+	
 	<div id=proposalBox>
 		<!-- Database will populate in here -->
 		<?php 
@@ -38,8 +35,25 @@
 		if ($conn->connect_error) {
 		  die("Connection failed: " . $conn->connect_error);
 		}
-		echo "Connected successfully<br><br>";
+		$sql = "SELECT projectID, projectName, status FROM project";
+		$result = $conn->query($sql);
+
+		if ($result->num_rows > 0) {
+		  // output data of each row
+		  while($row = $result->fetch_assoc()) {
+			  if($row['status'] == 0){
+			echo "<div style='position:flex;'>" . $row["projectID"] . " " . $row["projectName"] . "</div>";
+			  }
+		  }
+		} else {
+		  echo "0 results";
+		}
+		$conn->close();
+		
+		
 		?>
+		
+		
 		
 	</div>
 	<div id=button>Accept Project</div>
@@ -48,11 +62,40 @@
 
 <div id=projectProposal style="float:left;">
 	<h2 style="margin-left:5%;">Accepted Projects:</h2>
-	<div>
-		<p style="font-size: 15px; font-weight: bold; float: left; padding-left: 40px;">ID: 43</p><p style="float: right; padding-right:220px;">Johnny's New Bedroom Layout</p>
-		</div>
+	
 	<div id=proposalBox>
 		<!-- Database will populate in here -->
+				<?php 
+		$host = "localhost";
+		$username = "root";
+		$passW = "usbw";
+		$database = "westwoodliving";
+
+		// Create connection
+		$conn = new mysqli($host, $username, $passW, $database);
+
+		// Check connection
+		if ($conn->connect_error) {
+		  die("Connection failed: " . $conn->connect_error);
+		}
+		$sql = "SELECT projectID, projectName, status FROM project";
+		$result = $conn->query($sql);
+
+		if ($result->num_rows > 0) {
+		  // output data of each row
+		  while($row = $result->fetch_assoc()) {
+			  if($row['status'] == 1){
+			echo "<div style='position:flex;'>" . $row["projectID"] . " " . $row["projectName"] . "</div>";
+			  }
+		  }
+		} else {
+		  echo "0 results";
+		}
+		$conn->close();
+		
+		
+		?>
+		
 	</div>
 	<div id=button>Remove Project</div>
 </div>
