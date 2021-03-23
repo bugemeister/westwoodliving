@@ -151,6 +151,7 @@ a:visited {
 }
 
 #leftTitle{
+	box-shadow: 10px 10px 5px grey;
 	position: static;
 	width: 20%;
 	text-align: center;
@@ -161,6 +162,7 @@ a:visited {
 }
 
 #rightTitle{
+	box-shadow: 10px 10px 5px grey;
 	position: static;
 	width: 20%;
 	text-align: center;
@@ -211,6 +213,7 @@ a:visited {
 	border: solid black 5px;
 }
 #leftForeground{
+	box-shadow: 10px 10px 5px grey;
 	position: static;
 	margin-top: -10.5%;
 	margin-left: 23%;
@@ -235,6 +238,7 @@ a:visited {
 
 
 #rightDescription{
+	box-shadow: 10px 10px 5px grey;
 	position: static;
 	margin-top: -10.5%;
 	margin-left: 52%;
