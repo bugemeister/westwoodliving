@@ -56,13 +56,13 @@
 		</datalist><br>
 		
 	<div id=button><input type='submit' name='submit' value='Accept'></input></div>
-	<div id=button><input type='submit' value='Remove'></input></div>
+	<div id=button><input type='submit' name='submit' value='Remove'></input></div>
 	</form>
 </div>
 
 <div id=projectProposal style="float:left;">
 	<h2 style="margin-left:5%;">Accepted Projects:</h2>
-	<form action="acceptedProjects.php" method="post">
+	<form action="acceptedProjects.php" method="get">
 		<input list="acceptedProjects" name="acceptedProjects" style="margin-left:31px;">
 		<datalist id="acceptedProjects">
 		<!-- Database will populate in here -->
@@ -105,7 +105,7 @@
 
 <div id=projectProposal style="float:left;">
 	<h2 style="margin-left:5%;">Not Accepted Projects:</h2>
-		<form action="notAcceptedProjects.php" method="post">
+		<form action="notAcceptedProjects.php" method="get">
 		<input list="notAcceptedProjects" name="notAcceptedProjects" style="margin-left:31px;">
 		<datalist id="notAcceptedProjects">
 		<!-- Database will populate in here -->
