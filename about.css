@@ -20,7 +20,7 @@ html, body {
 li {
 	float: left;
 	width: 25%;
-	border: solid black 2px;
+	border-bottom: solid black 2px;
 }
 
 li a {
