@@ -19,8 +19,8 @@ html, body {
 
 li {
 	float: left;
-	width: 24.7%;
-	border: solid black 2px;
+	width: 24.84%;
+	border: solid black 1.5px;
 }
 
 li a {
@@ -239,7 +239,7 @@ a:visited {
 	padding-right: 3%;
 	text-align: center;
 	background: #4E6668;
-	border: solid black 5px;
+	border: solid black 2px;
 }
 #consultationButton{
 	position: static;
@@ -249,7 +249,7 @@ a:visited {
 	background: #4E6668;
 	margin: auto;
 	margin-top: 10%;
-	border: solid black 3px;
+	border: solid black 2px;
 }
 
 #footerInside{
@@ -279,7 +279,7 @@ a:visited {
 	background-color: #8B5644;
 	text-align: center;
 	width: 22%;
-	border: 1px solid black;
+	border: 1.5px solid black;
 	padding: 2%;
 	margin: 1%;
 	margin-left: 15%;
@@ -291,7 +291,7 @@ a:visited {
 	text-align: center;
 	background-color: #8B5644;
 	width: 22%;
-	border: 1px solid black;
+	border: 1.5px solid black;
 	padding: 2%;
 	margin: 1%;
 	margin-left: 15%;
