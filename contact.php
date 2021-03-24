@@ -65,7 +65,7 @@
 <div id=footer>
 	<p id=footerInside>
 		<a href="Gallery.html">Gallery</a><br><br><br>
-		<a href="contact.html">Contact<br><br><br>
+		<a href="contact.php">Contact<br><br><br>
 		<a href="about.html">About
 	</p>
 	<div id=logoBox>
