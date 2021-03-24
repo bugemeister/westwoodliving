@@ -65,11 +65,11 @@
 <div id=footer>
 	<p id=footerInside>
 		<a href="Gallery.html">Gallery</a><br><br><br>
-		<a href="contact.html">Contact<br><br><br>
+		<a href="contact.php">Contact<br><br><br>
 		<a href="about.html">About
 	</p>
 	<div id=logoBox>
-		<a href="home.html"><img id=logoFooter src="images/westwood.png" ></img></a>
+		<a href="index.html"><img id=logoFooter src="images/westwood.png" ></img></a>
 	</div>
 </div>
 
