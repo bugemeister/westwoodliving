@@ -33,8 +33,6 @@
 <label for="field1"><span>First Name <span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" /></label>
 <label for="field2"><span>Last Name <span class="required">*</span></span><input type="text" class="input-field" name="field2" value="" /></label>
 <label for="field3"><span>Email Address <span class="required">*</span></span><input type="text" class="input-field" name="field3" value="" /></label>
-<label for="field5"><span>Address <input type="text" class="input-field" name="field5" value="" /></label>
-<label for="field6"><span>Phone No. <input type="text" class="input-field" name="field6" value="" /></label>
 
 
 </div>

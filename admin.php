@@ -19,8 +19,9 @@
 
 <div id=projectProposal style="float:left;">
 	<h2 style="margin-left:5%;">Project Proposals:</h2>
-	
-	<div id=proposalBox>
+	<form action="projectProposals.php" method="get">
+		<input list="projectproposals" name="projectproposals" style="margin-left:31px;">
+		<datalist id="projectproposals">
 		<!-- Database will populate in here -->
 		<?php 
 		$host = "localhost";
@@ -42,7 +43,7 @@
 		  // output data of each row
 		  while($row = $result->fetch_assoc()) {
 			  if($row['status'] == 0){
-			echo "<div style='position:flex;'>" . $row["projectID"] . " " . $row["projectName"] . "</div>";
+				echo "<option value='{$row['projectID']}'>{$row['projectName']}</option>";
 			  }
 		  }
 		} else {
@@ -52,18 +53,18 @@
 		
 		
 		?>
+		</datalist><br>
 		
-		
-		
-	</div>
-	<div id=button>Accept Project</div>
-	<div id=button>Remove Projects</div>
+	<div id=button><input type='submit' name='submit' value='Accept'></input></div>
+	<div id=button><input type='submit' value='Remove'></input></div>
+	</form>
 </div>
 
 <div id=projectProposal style="float:left;">
 	<h2 style="margin-left:5%;">Accepted Projects:</h2>
-	
-	<div id=proposalBox>
+	<form action="acceptedProjects.php" method="post">
+		<input list="acceptedProjects" name="acceptedProjects" style="margin-left:31px;">
+		<datalist id="acceptedProjects">
 		<!-- Database will populate in here -->
 		<?php 
 		$host = "localhost";
@@ -85,7 +86,8 @@
 		  // output data of each row
 		  while($row = $result->fetch_assoc()) {
 			  if($row['status'] == 1){
-			echo "<div style='position:flex;'>" . $row["projectID"] . " " . $row["projectName"] . "</div>";
+				echo "<option value='{$row['projectID']}'>{$row['projectName']}</option>";
+
 			  }
 		  }
 		} else {
@@ -95,14 +97,17 @@
 		
 		
 		?>
+		</datalist><br>
 		
-	</div>
-	<div id=button>Remove Project</div>
+	<div id=button><input type='submit' value='Remove'></input></div>
+	</form>
 </div>
 
 <div id=projectProposal style="float:left;">
 	<h2 style="margin-left:5%;">Not Accepted Projects:</h2>
-	<div id=proposalBox>
+		<form action="notAcceptedProjects.php" method="post">
+		<input list="notAcceptedProjects" name="notAcceptedProjects" style="margin-left:31px;">
+		<datalist id="notAcceptedProjects">
 		<!-- Database will populate in here -->
 		<?php 
 		$host = "localhost";
@@ -124,7 +129,8 @@
 		  // output data of each row
 		  while($row = $result->fetch_assoc()) {
 			  if($row['status'] == 2){
-			echo "<div style='position:flex;'>" . $row["projectID"] . " " . $row["projectName"] . "</div>";
+				echo "<option value='{$row['projectID']}'>";
+				echo "{$row['projectName']}";
 			  }
 		  }
 		} else {
@@ -134,8 +140,10 @@
 		
 		
 		?>
-	</div>
-	<div id=button>Accept Project</div>
+		</datalist><br>
+		
+	<div id=button><input type='submit' value='Accept'></input></div>
+	</form>
 </div>
 
 
@@ -146,31 +154,6 @@
 	</div>
 </div>
 
-
-<div id=addTestimonial style="float:left;">
-	<h2 style="margin-left:5%;">Add Testimonial:</h2>
-	<div id=testimonialBox>
-		<!-- Database will populate in here -->
-	</div>
-	<div id=button>Add</div>
-</div>
-
-<div id=addTestimonial style="float:right;">
-	<h2 style="margin-left:5%;">Add Picture:</h2>
-	<div id=testimonialBox>
-		<!-- Database will populate in here -->
-	</div>
-	<div id=button>Browse</div>
-	<div id=button>Add</div>
-	<div id=button>View Project</div>
-</div>
-
-
-
-
-
-
-	
 	
 </body>
 
