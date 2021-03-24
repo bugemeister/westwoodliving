@@ -15,12 +15,14 @@ html, body {
 	padding: 0;
 	overflow: hidden;
 	background-color: #4E6668;
+	
 }
 
 li {
 	float: left;
-	width: 24.84%;
-	border: solid black 1.5px;
+	width: 25%;
+	border-bottom: solid black 2px;
+	
 }
 
 li a {
