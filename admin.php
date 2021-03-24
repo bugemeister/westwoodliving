@@ -148,9 +148,90 @@
 
 
 <div id=projectInformation>
-	<h2 style="margin-left:20%;">Project Information:</h2>
+	<h2 style="margin-left:20%;">Project Information</h2>
+	<form style='margin-left:380px; margin-bottom:50px;' action='' method='get'>
+		<input type='text' id='projectSearch' name='projectSearch'/>
+		<input type='submit' name='Search' value='Search'/>
+	</form>
 	<div id=informationBox>
 		<!-- Database will populate project info here -->
+		<?php
+			if(isset($_GET['Search'])){
+				session_start();
+				$host = "localhost";
+				$username = "root";
+				$passW = "usbw";
+				$database = "westwoodliving";
+
+				// Create connection
+				$conn = new mysqli($host, $username, $passW, $database);
+
+				// Check connection
+				if ($conn->connect_error) {
+				  die("Connection failed: " . $conn->connect_error);
+				}
+				$sql = "SELECT projectID, projectName, status, description, createdAt, bookingID FROM project";
+				$result = $conn->query($sql);
+
+				if ($result->num_rows > 0) {
+				  // output data of each row
+					  while($row = $result->fetch_assoc()) {
+						   if($row['projectID'] == $_GET['projectSearch']){
+						  echo "
+						  <form action='' method='get'>
+						  <h3>Project ID:</h3>
+						<input type='text' id='projectID' name='projectID' value='{$row['projectID']}' hidden/>
+						<h5>{$row['projectID']}</h5>
+						<h3>Project Name:</h3>
+						<input type='text' id='projectName' name='projectName' value='{$row['projectName']}'/>
+						<h3>Status Code:</h3>
+						<input type='text' id='status' name='status' value='{$row['status']}'/>
+						<h3>Description:</h3>
+						<input type='text' id='description' name='description' value='{$row['description']}'/>
+						<h3>Date Created:</h3>
+						<input type='text' id='createdAt' name='createdAt' value='{$row['createdAt']}'/>
+						<h3>Booking ID:</h3>
+						<input type='text' id='bookingID' name='bookingID' value='{$row['bookingID']}' disabled/>
+						<input type='submit' name='Update' value='Update'/>
+						</form>";
+						  
+					  }
+					}
+				$conn->close();
+				}
+				
+			}
+			
+			if (isset($_GET['Update'])){
+				$host = "localhost";
+				$username = "root";
+				$passW = "usbw";
+				$database = "westwoodliving";
+
+				// Create connection
+				$conn = new mysqli($host, $username, $passW, $database);
+
+				// Check connection
+				if ($conn->connect_error) {
+				  die("Connection failed: " . $conn->connect_error);
+				}
+				
+				$sql = "UPDATE project SET 
+				'projectName' = '{$_GET['projectName']}',
+				'description' = '{$_GET['description']}',
+				'status' = '{$_GET['status']}',
+				'createdAt' = '{$_GET['createdAt']}',
+				WHERE projectID='{$_GET['projectID']}'";
+
+				if ($conn->query($sql) === TRUE) {
+				  echo "Record updated successfully";
+				} else {
+				  echo "Error updating record: " . $conn->error;
+				}
+
+				$conn->close();
+			}
+		?>
 	</div>
 </div>
 
@@ -170,6 +251,8 @@
 	</div>
 </div>
 </footer>
+
+
 
 
 </html>
