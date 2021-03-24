@@ -69,7 +69,7 @@
 		<a href="about.html">About
 	</p>
 	<div id=logoBox>
-		<a href="home.html"><img id=logoFooter src="images/westwood.png" ></img></a>
+		<a href="index.html"><img id=logoFooter src="images/westwood.png" ></img></a>
 	</div>
 </div>
 
